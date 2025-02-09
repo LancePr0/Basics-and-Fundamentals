@@ -20,8 +20,6 @@ int main() {
         cin >> arr2[i];
     }
 
-    int tempArray[mergeSize]; 
-
     for (int i = 0; i < maxSize; i++) {
         tempArray[i] = arr1[i];
     }
