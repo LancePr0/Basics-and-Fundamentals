@@ -21,3 +21,23 @@ int main() {
     }
 
     int tempArray[mergeSize]; 
+
+    for (int i = 0; i < maxSize; i++) {
+        tempArray[i] = arr1[i];
+    }
+    for (int i = 0; i < maxSize; i++) {
+        tempArray[maxSize + i] = arr2[i];
+    }
+
+  
+    sort(tempArray, tempArray + mergeSize, greater<int>());
+
+   
+    cout << "Merged and sorted array: ";
+    for (int i = 0; i < mergeSize; i++) {
+        cout << tempArray[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
